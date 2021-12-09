@@ -21,7 +21,7 @@
 }
 
 .main-article h1 {
-  font-size: var(--fs-800);
+  font-size: clamp(var(--fs-800), 3vw, var(--fs-900));
   font-weight: 700;
   padding: 0.5em;
 }
@@ -35,7 +35,7 @@
 }
 .main-article p {
   font-family: var(--ff-sans-second, sans-serif);
-  font-size: var(--fs-300);
+  font-size: clamp(var(--fs-300), 2vw, var(--fs-400));
   color: var(--clr-main-p);
   padding: 0.5em;
 }
@@ -114,7 +114,6 @@
   .card {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
   }
 
   .img {
@@ -135,9 +134,12 @@
     text-align: left;
   }
 
+  .main-article p {
+    padding: 1em;
+  }
+
   .main-article ul {
     flex-direction: row;
-    justify-content: center;
     justify-content: left;
   }
 }
