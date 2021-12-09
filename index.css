@@ -15,6 +15,12 @@
   overflow: hidden;
 }
 
+.img {
+  background-repeat: no-repeat;
+  width: 100%;
+  filter: contrast(200%) brightness(70%);
+}
+
 .main-article {
   padding: 1em;
   text-align: center;
@@ -83,8 +89,7 @@
       ),
       url("./images/image-header-mobile.jpg");
     background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
+
     aspect-ratio: 654/480;
   }
 }
@@ -98,8 +103,7 @@
       url("./images/image-header-mobile.jpg");
     background-size: cover;
     background-position: top;
-    background-repeat: no-repeat;
-    width: 100%;
+
     max-height: 15em;
     aspect-ratio: 654/480;
   }
@@ -124,8 +128,6 @@
       url("./images/image-header-desktop.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
     aspect-ratio: 540/446;
   }
 
