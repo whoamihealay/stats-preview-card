@@ -1,0 +1,152 @@
+/* ***** */
+/* VARS */
+/* ***** */
+
+:root {
+  /* #### COLORS #### */
+  /* General */
+  --clr-body-color: white; /* Main text color */
+  --clr-body-bg: hsl(233, 47%, 7%); /* Main background */
+  /* Primary */
+  --clr-card-bg: hsl(244, 38%, 16%); /* Card Background */
+  --clr-accent: hsl(277, 64%, 61%); /* Text accent */
+  /* Neutral */
+  --clr-main-h: hsl(0, 0%, 100%);
+  --clr-main-p: hsla(0, 0%, 100%, 0.75);
+  --clr-stat-h: hsla(0, 0%, 100%, 0.6);
+
+  /* Typography */
+  --ff-sans-normal: "Inter";
+  --ff-sans-second: "Lexend Deca";
+  --fs-900: 2rem;
+  --fs-800: 1.75rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1.375rem;
+  --fs-500: 1.125rem;
+  --fs-400: 1rem;
+  --fs-300: 0.938rem;
+  --fs-200: 0.75rem;
+  /* utilities */
+  --border-rad: 0.5rem;
+  --line-height: 1.5;
+}
+
+/* ***** */
+/* Reset */
+/* ***** */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture,
+.App {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+  font-size: var(--fs-400, 1.125rem);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white, white);
+}
+
+body {
+  font-family: var(--ff-sans-normal, sans-serif);
+  font-size: var(--fs-400, 1.125rem);
+  color: var(--clr-body-color, white);
+  background-color: var(--clr-body-bg, black);
+  line-height: var(--line-height, 1.5);
+  min-height: 100vh;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  border: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ********* */
+/* UTILITIES */
+/* ********* */
+
+/* General utils */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 1.5em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
