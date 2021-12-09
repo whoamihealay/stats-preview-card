@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/responsive-mobile-first-stats-preview-card-bLKBX8gL_)
 - Live Site URL: [whoamihealay.github.io/stats-preview-card](https://whoamihealay.github.io/stats-preview-card)
 
 ## My process
